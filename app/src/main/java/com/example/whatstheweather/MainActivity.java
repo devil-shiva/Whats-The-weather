@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
 
         DownloadJson task = new DownloadJson();
         if(!cityName.getText().equals("")) {
-            task.execute(" https://api.openweathermap.org/data/2.5/weather?q=" + cityName.getText().toString() + "&appid=b829e5b968f3b3e14575c2bdbac4a00d");
+            task.execute(" https://api.openweathermap.org/data/2.5/weather?q=" + cityName.getText().toString() + "&appid={Your API Token}");
 
         }else {
             Toast.makeText(this , "Cannot Find Weather :(" , Toast.LENGTH_SHORT).show();
